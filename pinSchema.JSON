@@ -1,0 +1,66 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "control pin",
+            "intents": [
+                 {
+                    "name": "GpioControlIntent",
+                    "slots": [
+                        {
+                            "name": "status",
+                            "type": "GPIO_CONTROL"
+                        },
+                        {
+                            "name": "pin",
+                            "type": "AMAZON.NUMBER"
+                    ],
+                    "samples": [
+                        "off",
+                        "on"
+                    ]
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "GPIO_CONTROL",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "off",
+                                "synonyms": [
+                                    "Off",
+                                    "low"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "on",
+                                "synonyms": [
+                                    "High",
+                                    "On"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
