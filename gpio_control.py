@@ -43,7 +43,5 @@ def location_control(status, location):
     return statement('Turning {} {}!'.format(location, status))
 
 if __name__ == '__main__':
-
 port = 5000 #the custom port you want
-
 app.run(host='0.0.0.0', port=port)
