@@ -17,7 +17,7 @@ def launch():
     speech_text = 'Welcome to Raspberry Pi Automation.'
     return question(speech_text).reprompt(speech_text).simple_card(speech_text)
 
-@ask.intent('GpioIntent', mapping = {'status':'status'})
+@ask.intent('GPIOControlIntent', mapping = {'status':'status'})
 def Gpio_Intent(status,room):
     GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BCM)    
