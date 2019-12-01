@@ -20,7 +20,7 @@
                     "samples": []
                 },
                 {
-                    "name": "GpioIntent",
+                    "name": "GPIOControlIntent",
                     "slots": [
                         {
                             "name": "status",
